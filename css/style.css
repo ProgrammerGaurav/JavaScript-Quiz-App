@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #222222;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: #333333;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 10px 2px #333333;
+    color: white;
+
+}
+
+.btn-grid {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.btn:hover {
+    background-color: #dadada;
+    color: black;
+}
+
+.btn.correct {
+    background-color: green;
+    color: black;
+}
+
+.btn.wrong {
+    background-color: #E74C3C;
+    color: black;
+}
+
+.start-btn,
+.next-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
